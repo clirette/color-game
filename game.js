@@ -61,6 +61,7 @@ function reset() {
 function setupModeButtons() {
 	for (var i = 0; i < modeBtns.length; i++) {
 		modeBtns[i].addEventListener("click", function() {
+			messageDisplay.textContent = "";
 			modeBtns[0].classList.remove("selected");
 			modeBtns[1].classList.remove("selected");
 			this.classList.add("selected");
